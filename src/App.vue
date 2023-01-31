@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import Message from "./Message";
 
-function showMessage(msg: string) {
-  console.log(msg);
+function showMessage(msg: Message) {
+  console.log(msg.message);
 }
 </script>
 
 <template>
-  <button @click="showMessage(new Message('hello').message)">Click me</button>
+  <button @click="showMessage(new Message('hello'))">Click me</button>
 </template>
 
 
